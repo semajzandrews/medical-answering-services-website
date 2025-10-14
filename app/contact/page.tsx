@@ -137,9 +137,9 @@ export default function ContactPage() {
         )}
       </header>
 
-      <main className="pt-28 md:pt-32 lg:pt-36">
+      <main>
         {/* Hero */}
-        <section className="relative py-12 md:py-16 bg-gradient-to-br from-amber-50/50 to-white">
+        <section className="relative pt-28 md:pt-32 lg:pt-36 pb-12 md:pb-16 bg-gradient-to-br from-amber-50/50 to-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Get in Touch</p>
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">

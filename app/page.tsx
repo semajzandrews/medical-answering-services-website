@@ -47,7 +47,7 @@ export default function Home() {
               {/* CTA + Mobile */}
               <div className="flex items-center gap-2">
                 <a href="#contact" className="hidden md:inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-amber-600/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 transition bg-[#D4AF37] hover:bg-[#C5A028]">
-                  Schedule Demo
+                  Get Started
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <button 
@@ -99,7 +99,7 @@ export default function Home() {
               </nav>
               <div className="p-4 border-t border-slate-200">
                 <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="flex w-full items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-amber-600/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 transition bg-[#D4AF37] hover:bg-[#C5A028]">
-                  Schedule Demo
+                  Get Started
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -118,8 +118,8 @@ export default function Home() {
                 <div className="relative">
                   <div className="relative overflow-visible">
                         <img 
-                          src="/hero-hispanic-woman.jpg" 
-                          alt="Professional Hispanic healthcare worker taking patient call with headset" 
+                          src="/hero-black-american-female.jpg" 
+                          alt="Professional Black American female healthcare worker taking patient call with headset" 
                           className="w-full rounded-[28px] border border-slate-200 shadow-lg object-cover aspect-[4/3]"
                         />
                     {/* Overlay: Live Answer Badge */}
@@ -149,15 +149,14 @@ export default function Home() {
                 <div className="mb-4">
                   <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Healthcare Communications</p>
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
-                  Never miss a patient call with{" "}
-                  <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] to-[#F5C842]">
-                    24/7 medical answering
-                  </span>
-                  {" "}and nurse triage
-                </h1>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900 mb-2">
+                      Never miss a patient call with{" "}
+                      <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] to-[#F5C842] pb-1">
+                        24/7 medical answering
+                      </span>
+                    </h1>
                 <p className="mt-5 text-base md:text-lg text-slate-600 leading-relaxed">
-                  HIPAA-compliant call handling, clinical triage by licensed nurses, and seamless communication—so your team can focus on care, not callbacks.
+                  HIPAA-compliant call handling and seamless communication—so your team can focus on care, not callbacks.
                 </p>
 
                 {/* CTAs */}

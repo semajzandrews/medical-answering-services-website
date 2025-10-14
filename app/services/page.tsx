@@ -49,7 +49,7 @@ export default function ServicesPage() {
 
               <div className="flex items-center gap-2">
                 <a href="/contact" className="hidden md:inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-amber-600/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 transition bg-[#D4AF37] hover:bg-[#C5A028]">
-                  Schedule Demo
+                  Get Started
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <button 
@@ -101,7 +101,7 @@ export default function ServicesPage() {
               </nav>
               <div className="p-4 border-t border-slate-200">
                 <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="flex w-full items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-amber-600/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 transition bg-[#D4AF37] hover:bg-[#C5A028]">
-                  Schedule Demo
+                  Get Started
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -110,9 +110,9 @@ export default function ServicesPage() {
         )}
       </header>
 
-      <main className="pt-28 md:pt-32 lg:pt-36">
+      <main>
         {/* Hero */}
-        <section className="relative py-16 md:py-20 bg-gradient-to-br from-amber-50/50 to-white">
+        <section className="relative pt-28 md:pt-32 lg:pt-36 pb-16 md:pb-20 bg-gradient-to-br from-amber-50/50 to-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Our Services</p>
             <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
@@ -137,16 +137,8 @@ export default function ServicesPage() {
         <section className="py-16 md:py-24 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Image */}
-              <div className="order-2 lg:order-1">
-                <img 
-                  src="/service-phone-calls.jpg" 
-                  alt="Professional healthcare worker answering patient calls" 
-                  className="w-full rounded-2xl border border-slate-200 shadow-lg object-cover aspect-[4/3]"
-                />
-              </div>
               {/* Text */}
-              <div className="order-1 lg:order-2 space-y-6">
+              <div className="space-y-6">
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-amber-100 ring-1 ring-amber-300/50">
                   <Phone className="w-7 h-7 text-amber-700" />
                 </div>
@@ -200,8 +192,8 @@ export default function ServicesPage() {
               {/* Image */}
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?q=80&w=1600&auto=format&fit=crop" 
-                  alt="Healthcare professional answering phone" 
+                  src="/service-phone-calls.jpg" 
+                  alt="Professional healthcare worker answering patient calls" 
                   className="w-full rounded-[28px] border border-slate-200 shadow-lg object-cover aspect-[4/3]"
                 />
               </div>
@@ -265,16 +257,8 @@ export default function ServicesPage() {
         <section className="py-16 md:py-24 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Image */}
-              <div className="order-2 lg:order-1">
-                <img 
-                  src="/service-emergency-alerts.jpg" 
-                  alt="Emergency medical alert system" 
-                  className="w-full rounded-2xl border border-slate-200 shadow-lg object-cover aspect-[4/3]"
-                />
-              </div>
               {/* Text */}
-              <div className="order-1 lg:order-2 space-y-6">
+              <div className="space-y-6">
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-rose-100">
                   <AlertCircle className="w-7 h-7 text-rose-700" />
                 </div>
@@ -312,8 +296,8 @@ export default function ServicesPage() {
               {/* Image */}
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1600&auto=format&fit=crop" 
-                  alt="Emergency alert" 
+                  src="/service-emergency-alerts.jpg" 
+                  alt="Emergency medical alert system" 
                   className="w-full rounded-[28px] border border-slate-200 shadow-lg object-cover aspect-[4/3]"
                 />
               </div>
@@ -373,16 +357,8 @@ export default function ServicesPage() {
         <section className="py-16 md:py-24 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Image */}
-              <div className="order-2 lg:order-1">
-                <img 
-                  src="/service-medical-documentation.jpg" 
-                  alt="Medical documentation and prescription management" 
-                  className="w-full rounded-2xl border border-slate-200 shadow-lg object-cover aspect-[4/3]"
-                />
-              </div>
               {/* Text */}
-              <div className="order-1 lg:order-2 space-y-6">
+              <div className="space-y-6">
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald-100">
                   <FileText className="w-7 h-7 text-emerald-700" />
                 </div>
@@ -416,8 +392,8 @@ export default function ServicesPage() {
               {/* Image */}
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=1600&auto=format&fit=crop" 
-                  alt="Prescription documents" 
+                  src="/service-medical-documentation.jpg" 
+                  alt="Prescription medication bottles and documents" 
                   className="w-full rounded-[28px] border border-slate-200 shadow-lg object-cover aspect-[4/3]"
                 />
               </div>

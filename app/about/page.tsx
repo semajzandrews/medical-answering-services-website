@@ -44,7 +44,7 @@ export default function AboutPage() {
 
               <div className="flex items-center gap-2">
                 <a href="/contact" className="hidden md:inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-amber-600/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 transition bg-[#D4AF37] hover:bg-[#C5A028]">
-                  Schedule Demo
+                  Get Started
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <button 
@@ -96,7 +96,7 @@ export default function AboutPage() {
               </nav>
               <div className="p-4 border-t border-slate-200">
                 <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="flex w-full items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-amber-600/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 transition bg-[#D4AF37] hover:bg-[#C5A028]">
-                  Schedule Demo
+                  Get Started
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -106,45 +106,63 @@ export default function AboutPage() {
       </header>
 
       <main className="pt-28 md:pt-32 lg:pt-36">
-        {/* Hero */}
-        <section className="relative">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-              {/* Text */}
-              <div className="order-2 lg:order-1">
-                <div className="mb-4">
-                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">About Us</p>
-                </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
-                  Healthcare communications built with{" "}
-                  <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] to-[#F5C842]">
-                    care
-                  </span>
-                </h1>
-                <p className="mt-5 text-base md:text-lg text-slate-600 leading-relaxed">
-                  Founded by healthcare professionals who understand the critical importance of every patient call.
-                </p>
-              </div>
+            {/* Hero */}
+            <section className="relative">
+              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+                  {/* Text */}
+                  <div className="order-2 lg:order-1">
+                    <div className="mb-4">
+                      <p className="text-xs uppercase tracking-[0.2em] text-slate-500">About Us</p>
+                    </div>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
+                      Healthcare communications built with{" "}
+                      <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] to-[#F5C842]">
+                        care
+                      </span>
+                    </h1>
+                    <p className="mt-5 text-base md:text-lg text-slate-600 leading-relaxed">
+                      Founded by healthcare professionals who understand the critical importance of every patient call.
+                    </p>
+                  </div>
 
-              {/* Founder Photo */}
-              <div className="order-1 lg:order-2">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1600&auto=format&fit=crop" 
-                    alt="Founder" 
-                    className="w-full rounded-[28px] border border-slate-200 shadow-lg object-cover aspect-[4/5]"
-                  />
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <div className="rounded-2xl border border-slate-200 bg-white/90 backdrop-blur px-5 py-4 shadow-sm">
-                      <div className="text-lg font-semibold text-slate-900">Sarah Mitchell</div>
-                      <div className="text-sm text-slate-600">Founder & CEO, Former Healthcare Administrator</div>
+                  {/* Leadership Photos */}
+                  <div className="order-1 lg:order-2">
+                    <div className="grid grid-cols-2 gap-4">
+                      {/* Caramel Skin Executive */}
+                      <div className="relative">
+                        <img 
+                          src="/about-caramel-woman.jpg" 
+                          alt="Dr. Jasmine Williams - Founder & CEO" 
+                          className="w-full rounded-[20px] border border-slate-200 shadow-lg object-cover aspect-[3/4]"
+                        />
+                        <div className="absolute bottom-4 left-4 right-4">
+                          <div className="rounded-xl border border-slate-200 bg-white/95 backdrop-blur px-3 py-2 shadow-sm text-center">
+                            <div className="text-sm font-semibold text-slate-900">Dr. Jasmine Williams</div>
+                            <div className="text-xs text-slate-600">Founder & CEO</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Darker Skin Executive */}
+                      <div className="relative mt-8">
+                        <img 
+                          src="/about-darker-woman.jpg" 
+                          alt="Dr. Naomi Johnson - Chief Operating Officer" 
+                          className="w-full rounded-[20px] border border-slate-200 shadow-lg object-cover aspect-[3/4]"
+                        />
+                        <div className="absolute bottom-4 left-4 right-4">
+                          <div className="rounded-xl border border-slate-200 bg-white/95 backdrop-blur px-3 py-2 shadow-sm text-center">
+                            <div className="text-sm font-semibold text-slate-900">Dr. Naomi Johnson</div>
+                            <div className="text-xs text-slate-600">Chief Operating Officer</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
 
         {/* Our Story */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 via-slate-50 to-gray-100">
@@ -165,8 +183,8 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="mt-10 pt-8 border-t border-slate-200">
-              <div className="text-3xl font-serif text-slate-900 mb-2" style={{ fontFamily: 'Georgia, serif' }}>Sarah Mitchell</div>
+            <div className="mt-10 pt-8 border-t border-slate-200 text-center">
+              <div className="text-3xl font-serif text-slate-900 mb-2" style={{ fontFamily: 'Georgia, serif' }}>Dr. Jasmine Williams</div>
               <div className="text-sm text-slate-600">Founder & CEO</div>
             </div>
           </div>
@@ -230,17 +248,17 @@ export default function AboutPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Team Member 1 */}
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition group">
-                        <img 
-                          src="/about-black-woman-owner.jpg" 
-                          alt="Dr. Michelle Thompson - Founder & CEO" 
-                          className="h-48 w-full rounded-xl object-cover mb-4"
-                        />
-                <h3 className="text-lg font-semibold text-slate-900">Dr. Michelle Thompson</h3>
-                <div className="text-sm text-slate-600 mb-3">Founder & CEO</div>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  15+ years in healthcare administration, former Practice Manager at Regional Medical Center.
+              {/* Team Member 1 - Sarah Mitchell */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition group flex flex-col">
+                <img 
+                  src="/team-sarah-mitchell.jpg" 
+                  alt="Sarah Mitchell - Practice Administrator" 
+                  className="h-48 w-full rounded-xl object-cover mb-4"
+                />
+                <h3 className="text-lg font-semibold text-slate-900">Sarah Mitchell</h3>
+                <div className="text-sm text-slate-600 mb-3">Practice Administrator</div>
+                <p className="text-sm text-slate-600 leading-relaxed min-h-[3rem] flex-grow">
+                  Former Practice Manager with 10+ years experience in healthcare operations and patient care coordination.
                 </p>
                 <div className="mt-4 pt-4 border-t border-slate-200">
                   <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-[#D4AF37] hover:text-[#C5A028]">
@@ -250,16 +268,16 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Team Member 2 */}
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition group">
-                        <img 
-                          src="/team-black-man.jpg" 
-                          alt="Carlos Rodriguez - Director of Operations" 
-                          className="h-48 w-full rounded-xl object-cover mb-4"
-                        />
-                <h3 className="text-lg font-semibold text-slate-900">Carlos Rodriguez</h3>
+              {/* Team Member 2 - Jamal Murray */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition group flex flex-col">
+                <img 
+                  src="/team-carlos-rodriguez.jpg" 
+                  alt="Jamal Murray - Director of Operations" 
+                  className="h-48 w-full rounded-xl object-cover mb-4 object-top"
+                />
+                <h3 className="text-lg font-semibold text-slate-900">Jamal Murray</h3>
                 <div className="text-sm text-slate-600 mb-3">Director of Operations</div>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-sm text-slate-600 leading-relaxed min-h-[3rem] flex-grow">
                   Former RN and call center operations leader, passionate about patient experience.
                 </p>
                 <div className="mt-4 pt-4 border-t border-slate-200">
@@ -270,17 +288,17 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Team Member 3 */}
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition group">
-                        <img 
-                          src="/team-white-woman.jpg" 
-                          alt="James Williams - Compliance Officer" 
-                          className="h-48 w-full rounded-xl object-cover mb-4"
-                        />
-                <h3 className="text-lg font-semibold text-slate-900">James Williams</h3>
-                <div className="text-sm text-slate-600 mb-3">Compliance Officer</div>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  HIPAA expert with background in healthcare IT security and regulatory compliance.
+              {/* Team Member 3 - Dr. Michelle Chen */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition group flex flex-col">
+                <img 
+                  src="/team-asian-woman-ceo.jpg" 
+                  alt="Dr. Michelle Chen - Founder & CEO" 
+                  className="h-48 w-full rounded-xl object-cover mb-4"
+                />
+                <h3 className="text-lg font-semibold text-slate-900">Dr. Michelle Chen</h3>
+                <div className="text-sm text-slate-600 mb-3">Founder & CEO</div>
+                <p className="text-sm text-slate-600 leading-relaxed min-h-[3rem] flex-grow">
+                  15+ years in healthcare administration, former Practice Manager at Regional Medical Center.
                 </p>
                 <div className="mt-4 pt-4 border-t border-slate-200">
                   <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-[#D4AF37] hover:text-[#C5A028]">
